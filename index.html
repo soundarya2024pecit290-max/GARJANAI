@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARJANAI - Emergency Communication</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="brand">
+    <div class="lion-mark">🦁</div>
+    <div>
+        <div class="logo">GARJANAI</div>
+        <p class="tagline">
+            A Voice for Those Who Cannot Be Heard
+        </p>
+    </div>
+</div>
+        <div class="card">
+
+            <h1>Emergency Communication</h1>
+
+            <p class="description">
+                Communicate your need for help without speaking.
+            </p>
+
+            <button class="emergency-btn" onclick="startEmergency()">
+                START EMERGENCY MODE
+            </button>
+            <video id="camera" width="400" autoplay></video>
+            <p id="status">Waiting for hand detection...</p>
+            <p id="location">Location: Waiting...</p>
+<div id="alertCard">
+    <h2 id="alertTitle">Emergency Alert</h2>
+    <p id="alertMessage">No emergency detected.</p>
+    <p id="alertLocation">Location will appear here.</p>
+<p id="trustedContact">Trusted Contact: Emergency Contact</p>
+<p id="alertStatus">Alert Status: Ready</p>
+<p id="alertTime">Time: --:--</p>
+    <button id="sendAlert">SEND ALERT</button>
+</div>
+
+            <button class="report-btn" onclick="reportUnsafe()">
+                REPORT UNSAFE SITUATION
+            </button>
+
+        </div>
+
+        <p class="footer">
+            GARJANAI • Accessible Safety Technology
+        </p>
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at 50% 0%, #1b3553 0%, #091626 38%, #020711 80%);
+    color: #fff;
+}
+
+.container {
+    width: 94%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 22px 20px 30px;
+}
+
+/* HEADER */
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 4px 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.brand > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.lion-mark {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #ffd15c, #d99520);
+    font-size: 28px;
+    box-shadow: 0 8px 25px rgba(245,185,60,0.22);
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #f7c452;
+}
+
+.tagline {
+    margin: 3px 0 0;
+    font-size: 12px;
+    color: #91a5bb;
+}
+
+/* STATUS IN HEADER */
+
+.brand::after {
+    content: "●  SYSTEM READY";
+    color: #79d69b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* MAIN */
+
+.card {
+    margin: 28px auto 0;
+    padding: 38px;
+    border-radius: 26px;
+    background: rgba(10, 23, 39, 0.82);
+    border: 1px solid rgba(245, 193, 78, 0.15);
+    box-shadow: 0 25px 70px rgba(0,0,0,0.45);
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.description {
+    margin: 10px 0 27px;
+    color: #8fa5bd;
+    font-size: 15px;
+}
+
+/* START BUTTON */
+
+.emergency-btn {
+    padding: 16px 30px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ffd15c, #e7a126);
+    color: #07111c;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 10px 28px rgba(231,161,38,0.2);
+    transition: 0.2s;
+}
+
+.emergency-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* CAMERA + INFO */
+
+#camera {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: 330px;
+    object-fit: cover;
+    margin: 30px auto 15px;
+    border-radius: 20px;
+    background: #01050a;
+    border: 1px solid rgba(245,193,78,0.5);
+    box-shadow:
+        0 0 0 6px rgba(245,193,78,0.035),
+        0 20px 45px rgba(0,0,0,0.4);
+}
+
+/* STATUS */
+
+#status {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: rgba(26,48,70,0.8);
+    border: 1px solid rgba(245,193,78,0.2);
+    color: #f5c75e;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#location {
+    margin: 8px 0 25px;
+    color: #8196ad;
+    font-size: 13px;
+}
+
+/* ALERT */
+
+#alertCard {
+    display: none;
+    width: 100%;
+    max-width: 650px;
+    margin: 28px auto;
+    padding: 25px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #501923, #190b11);
+    border: 1px solid #ff5865;
+    box-shadow: 0 20px 55px rgba(0,0,0,0.5);
+    text-align: left;
+}
+
+#alertCard h2 {
+    margin: 0 0 17px;
+    text-align: center;
+    color: #ff7079;
+    font-size: 22px;
+}
+
+#alertMessage {
+    padding: 17px;
+    margin: 0 0 16px;
+    border-radius: 13px;
+    background: rgba(255,70,80,0.12);
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+#alertLocation,
+#trustedContact,
+#alertStatus,
+#alertTime {
+    padding: 10px 3px;
+    margin: 0;
+    color: #c3ced9;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+/* SEND */
+
+#sendAlert {
+    width: 100%;
+    margin-top: 19px;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff626c, #d92d3e);
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* REPORT */
+
+.report-btn {
+    margin-top: 10px;
+    padding: 13px 23px;
+    border-radius: 11px;
+    border: 1px solid rgba(245,193,78,0.25);
+    background: transparent;
+    color: #d9b75d;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.report-btn:hover {
+    background: rgba(245,193,78,0.08);
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 20px;
+    color: #52677d;
+    font-size: 11px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 96%;
+        padding: 15px 10px;
+    }
+
+    .brand {
+        align-items: flex-start;
+    }
+
+    .brand::after {
+        display: none;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .tagline {
+        font-size: 10px;
+    }
+
+    .lion-mark {
+        width: 43px;
+        height: 43px;
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 27px 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #camera {
+        height: 260px;
+    }
+
+    .emergency-btn {
+        width: 100%;
+    }
+
+    #alertCard {
+        padding: 20px;
+    }
+}
